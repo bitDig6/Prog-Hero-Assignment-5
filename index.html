@@ -24,24 +24,31 @@
         <!-- navbar section -->
         <div class="navbar w-full flex lg:px-36 pt-6 pb-16 sticky bg-[#F9F7F3]">
             <div class="navbar-start">
-              <a href="./blog.html" target="_blank" class="bg-[#B4F461] btn px-8 py-4">Blog</a>
+              <a href="./blog.html" target="" class="btn btn-sm lg:btn-md bg-lime-300 lg:px-8 lg:py-4">Blog</a>
             </div>
             <!-- logo and website name -->
-            <div class="navbar-center flex gap-4">
+            <div class="ml-10 navbar-center flex gap-4">
                 <img src="assets/logo.png" alt="logo and name of website">
-                <h1 class="text-xs lg:text-xl font-semibold">Donate Bangladesh</h1>
+                <h1 class="text-xs lg:text-xl font-semibold w-1/2 lg:w-full">Donate Bangladesh</h1>
             </div>
             <!-- available coins -->
             <div class="navbar-end flex gap-2">
               <img src="assets/coin.png" alt="coins">
-              <h1 class="text-xs lg:text-xl font-medium">5500 BDT</h1>
+              <h1 id="total-coins" class="text-xs lg:text-xl font-medium">5500 BDT</h1>
             </div>
           </div>
           <!-- banner section -->
+          <div class="flex justify-center gap-4 my-10 lg:mt-20 lg:mb-8">
+            <button id="btn-donation" class="btn bg-lime-400">Donation</button>
+            <button id="btn-history" class="btn text-gray-600">History</button>
+          </div>
     </header>
     <!-- main section -->
-    <main></main>
+    <main>
+      <!-- cards -->
+      <div class=""></div>
+    </main>
     <footer></footer>
-    <script src="js/buttons.js"></script>
+    <script src="js/toggle.js"></script>
 </body>
 </html>
