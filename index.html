@@ -45,13 +45,15 @@
       </div>
       <!-- banner section -->
       <div class="flex justify-center gap-4 my-10 lg:mt-20 lg:mb-8">
-        <button id="btn-donation" class="btn bg-lime-400">Donation</button>
-        <button id="btn-history" class="btn text-gray-600">History</button>
+        <button id="btn-show-donation" class="btn bg-lime-400">Donation</button>
+        <button id="btn-show-history" class="btn text-gray-600">History</button>
       </div>
     </header>
     <!-- main section -->
     <main>
-      <!-- cards start -->
+      <!-- cards section -->
+      <section id="donation">
+              <!-- cards start -->
       <div class="w-5/6 mx-auto mb-20 space-y-8">
         <!-- card 1 -->
         <div class="card border flex items-center lg:card-side bg-base-100 shadow-xl p-4 lg:p-8">
@@ -115,8 +117,17 @@
         </div>
       </div>
       <!-- cards end -->
+      </section>
+
+      <!-- donation history section -->
+      <section id="history" class="hidden">
+        <div>
+          <h1>All the donation history will be save here</h1>
+        </div>
+      </section>
     </main>
     <footer></footer>
+    <script src="js/utilities.js"></script>
     <script src="js/toggle.js"></script>
   </body>
 </html>
