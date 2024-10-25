@@ -13,6 +13,23 @@ function toggleSections(buttonId,sectionId){
     document.getElementById('btn-show-history').classList.remove('text-gray-600');
 
     buttonId.classList.add('bg-lime-400');
-    buttonId.classList.add('text-gray-600');
-    
+    buttonId.classList.add('text-gray-600');  
+}
+
+function getInputFieldValue(id){
+    const val =  parseFloat(document.getElementById(id).value);
+    return val;
+}
+
+function getTextFieldValue(id){
+    const val = parseFloat(document.getElementById(id).innerText);
+    return val;
+}
+
+function updateAmounts(donateId, donationAmount, newTotalCoinsAmount){
+    const totalCoins = document.getElementById('total-coins');
+    const donateIdElement = document.getElementById(donateId);
+
+    totalCoins.innerText = newTotalCoinsAmount;
+    donateIdElement.innerText = donationAmount;
 }
