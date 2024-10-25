@@ -25,9 +25,9 @@ document.getElementById('btn-nk-donate').addEventListener('click', function(){
     const newTotalCoinsAmount = totalCoinsAmount - donationAmount;
     const newNkDonationAmount = nkDonateAmount + donationAmount;
 
-    updateAmounts('nk-donate', newNkDonationAmount, newTotalCoinsAmount);
+    updateAmounts('input-nk-donate','nk-donate', newNkDonationAmount, newTotalCoinsAmount);
     
-    console.log(`donation made: ${donationAmount} nk-donation ${nkDonateAmount} current ${newTotalCoinsAmount}`);
+    // console.log(`donation made: ${donationAmount} nk-donation ${nkDonateAmount} current ${newTotalCoinsAmount}`);
 });
 
 document.getElementById('btn-feni-donate').addEventListener('click', function(){
@@ -50,9 +50,9 @@ document.getElementById('btn-feni-donate').addEventListener('click', function(){
     const newTotalCoinsAmount = totalCoinsAmount - donationAmount;
     const newFeniDonationAmount = feniDonateAmount + donationAmount;
 
-    updateAmounts('feni-donate', newFeniDonationAmount, newTotalCoinsAmount);
+    updateAmounts('input-feni-donate', 'feni-donate', newFeniDonationAmount, newTotalCoinsAmount);
     
-    console.log(`donation made: ${donationAmount} feni-donation ${feniDonateAmount} current ${totalCoinsAmount}`);
+    // console.log(`donation made: ${donationAmount} feni-donation ${feniDonateAmount} current ${totalCoinsAmount}`);
     
 });
 
@@ -71,13 +71,12 @@ document.getElementById('btn-protest-donate').addEventListener('click', function
         return;
     }
 
-    const protestDonateAmount = getTextFieldValue('feni-donate');
+    const protestDonateAmount = getTextFieldValue('protest-donate');
 
     const newTotalCoinsAmount = totalCoinsAmount - donationAmount;
     const newProtestDonationAmount = protestDonateAmount + donationAmount;
 
-    updateAmounts('protest-donate', newProtestDonationAmount, newTotalCoinsAmount);
+    updateAmounts('input-protest-donate', 'protest-donate', newProtestDonationAmount, newTotalCoinsAmount);
     
-    
-    console.log(`donation made: ${donationAmount} protest-donation ${protestDonateAmount} current ${totalCoinsAmount}`); 
+    // console.log(`donation made: ${donationAmount} protest-donation ${protestDonateAmount} current ${totalCoinsAmount}`); 
 });

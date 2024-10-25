@@ -26,10 +26,12 @@ function getTextFieldValue(id){
     return val;
 }
 
-function updateAmounts(donateId, donationAmount, newTotalCoinsAmount){
+function updateAmounts(inputId, donateId, donationAmount, newTotalCoinsAmount){
     const totalCoins = document.getElementById('total-coins');
     const donateIdElement = document.getElementById(donateId);
+    const inputIdElement = document.getElementById(inputId);
 
     totalCoins.innerText = newTotalCoinsAmount;
     donateIdElement.innerText = donationAmount;
+    inputIdElement.value = '';
 }
