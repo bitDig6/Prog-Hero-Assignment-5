@@ -36,29 +36,3 @@ function updateAmounts(inputId, donateId, donationAmount, newTotalCoinsAmount){
     inputIdElement.value = '';
 }
 
-function createHistoryEntry(btnId, donationAmount){
-    const historyEntries = document.getElementById('history-entries');
-    let msg = '';
-
-    if(btnId === 'btn-nk-donate'){
-        msg = donationAmount + ' Tk. donated for flood relief at Noakhali, Bangladesh';
-    }
-
-    const outerDiv = document.createElement('div');
-    const innerDiv1 = document.createElement('div');
-    // const innerDiv2 = 
-
-    outerDiv.classList.add('w-full');
-    outerDiv.classList.add('border');
-    outerDiv.classList.add('rounded-xl');
-    outerDiv.classList.add('p-8');    
-    outerDiv.classList.add('space-y-4');
-
-    innerDiv1.innerText = msg;
-    innerDiv1.classList.add('text-xl');
-    innerDiv1.classList.add('font-bold');
-
-    outerDiv.appendChild(innerDiv1);
-
-    historyEntries.appendChild(outerDiv);
-}

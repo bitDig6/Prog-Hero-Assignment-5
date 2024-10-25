@@ -26,11 +26,10 @@ document.getElementById('btn-nk-donate').addEventListener('click', function(){
     const newNkDonationAmount = nkDonateAmount + donationAmount;
 
     updateAmounts('input-nk-donate','nk-donate', newNkDonationAmount, newTotalCoinsAmount);
-    alert('Donation done successfully');
 
     createHistoryEntry('btn-nk-donate', donationAmount);
     
-    // console.log(`donation made: ${donationAmount} nk-donation ${nkDonateAmount} current ${newTotalCoinsAmount}`);
+    alert('Donation done successfully');
 });
 
 document.getElementById('btn-feni-donate').addEventListener('click', function(){
@@ -54,9 +53,10 @@ document.getElementById('btn-feni-donate').addEventListener('click', function(){
     const newFeniDonationAmount = feniDonateAmount + donationAmount;
 
     updateAmounts('input-feni-donate', 'feni-donate', newFeniDonationAmount, newTotalCoinsAmount);
+
+    createHistoryEntry('btn-feni-donate', donationAmount);
+
     alert('Donation done successfully');
-    
-    // console.log(`donation made: ${donationAmount} feni-donation ${feniDonateAmount} current ${totalCoinsAmount}`);
     
 });
 
@@ -81,6 +81,9 @@ document.getElementById('btn-protest-donate').addEventListener('click', function
     const newProtestDonationAmount = protestDonateAmount + donationAmount;
 
     updateAmounts('input-protest-donate', 'protest-donate', newProtestDonationAmount, newTotalCoinsAmount);
+
+    createHistoryEntry('btn-protest-donate', donationAmount);
+
     alert('Donation done successfully');
     
     // console.log(`donation made: ${donationAmount} protest-donation ${protestDonateAmount} current ${totalCoinsAmount}`); 
