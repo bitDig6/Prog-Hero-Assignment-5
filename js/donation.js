@@ -27,6 +27,8 @@ document.getElementById('btn-nk-donate').addEventListener('click', function(){
 
     updateAmounts('input-nk-donate','nk-donate', newNkDonationAmount, newTotalCoinsAmount);
     alert('Donation done successfully');
+
+    createHistoryEntry('btn-nk-donate', donationAmount);
     
     // console.log(`donation made: ${donationAmount} nk-donation ${nkDonateAmount} current ${newTotalCoinsAmount}`);
 });
