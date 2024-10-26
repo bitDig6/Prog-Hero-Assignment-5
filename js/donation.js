@@ -28,8 +28,12 @@ document.getElementById('btn-nk-donate').addEventListener('click', function(){
     updateAmounts('input-nk-donate','nk-donate', newNkDonationAmount, newTotalCoinsAmount);
 
     createHistoryEntry('btn-nk-donate', donationAmount);
+
+    const myModal1 = document.getElementById('my_modal_1');
+
+    myModal1.showModal();
     
-    alert('Donation done successfully');
+    // alert('Donation done successfully');
 });
 
 document.getElementById('btn-feni-donate').addEventListener('click', function(){
@@ -56,7 +60,10 @@ document.getElementById('btn-feni-donate').addEventListener('click', function(){
 
     createHistoryEntry('btn-feni-donate', donationAmount);
 
-    alert('Donation done successfully');
+    const myModal2 = document.getElementById('my_modal_2');
+    myModal2.showModal();
+
+    // alert('Donation done successfully');
     
 });
 
@@ -84,7 +91,8 @@ document.getElementById('btn-protest-donate').addEventListener('click', function
 
     createHistoryEntry('btn-protest-donate', donationAmount);
 
-    alert('Donation done successfully');
-    
-    // console.log(`donation made: ${donationAmount} protest-donation ${protestDonateAmount} current ${totalCoinsAmount}`); 
+    const myModal3 = document.getElementById('my_modal_3');
+    myModal3.showModal();
+
+    // alert('Donation done successfully');
 });
